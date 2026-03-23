@@ -37,7 +37,7 @@
 
        PORT=3000
        NODE_ENV=development
-       MONGODB_URI=mongodb://127.0.0.1:27017/taskflow
+       MONGODB_URI=mongodb+srv://<user>:<pass>@cluster0.xxxxx.mongodb.net/taskflow
        JWT_SECRET=secret_key_taskflow
        Client_URL=http://localhost:5173
 
@@ -68,6 +68,13 @@
 ================================================================
 3. วิธีใช้งานระบบ
 ================================================================
+
+--- 3.0 เปลี่ยนธีม ---
+
+  - กดไอคอน ☀ (รูปดวงอาทิตย์) ที่ Navbar มุมขวาบน
+  - เลือกสีจาก 8 ธีม: Nord, Night, Synthwave, Cyberpunk,
+    Forest, Coffee, Lemonade, Aqua
+  - ระบบจะจำธีมที่เลือกไว้แม้รีเฟรชหน้า
 
 --- 3.1 สมัครสมาชิก (Register) ---
 
@@ -160,6 +167,8 @@
   - Redux Toolkit (Global State Management)
   - React Router DOM (Routing)
   - Axios (HTTP Client)
+  - Tailwind CSS v4 + DaisyUI v5 (UI Framework)
+  - Theme Switcher (8 ธีม: Nord, Night, Synthwave, Cyberpunk, Forest, Coffee, Lemonade, Aqua)
 
   Backend:
   - Node.js + Express.js
