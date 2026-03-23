@@ -23,6 +23,18 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Hello, Welcome to SE NPRU TaskFlow Mini API 🚀',
+    version: '1.0.0',
+    endpoints: {
+      auth: '/api/auth',
+      tasks: '/api/tasks',
+    },
+  });
+});
+
 // Error handler
 app.use(errorHandler);
 
